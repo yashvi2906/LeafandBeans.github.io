@@ -1,0 +1,67 @@
+
+<!-- =========================
+File: about.html
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Leaf & Beans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="logo">🍃</span><span class="brand-text">Leaf & Beans</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+      <ul id="navMenu">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle theme">☕</button>
+  </header>
+
+  <main class="container section">
+    <header class="page-head">
+      <h1>Our Story</h1>
+      <p class="muted">Where ceremonial matcha meets specialty coffee.</p>
+    </header>
+
+    <div class="grid about-grid">
+      <div>
+        <p>Born out of a love for calm mornings and late‑night code sprints, Leaf & Beans partners with small Japanese tea farms and progressive coffee roasters to bring you clean, thrilling cups. Our pastries are laminated every dawn and sell out by dusk.</p>
+        <ul class="checklist">
+          <li>Direct‑trade matcha & coffee</li>
+          <li>Precision extraction & workshops</li>
+          <li>Minimalist space, fast Wi‑Fi, plenty of plugs</li>
+        </ul>
+      </div>
+      <div class="stack-photos">
+        <img src="assets/PouringLatte.jpg" alt="Pouring latte" loading="lazy">
+        <img src="assets/cafe1.jpg" alt="Cafe interior" loading="lazy">
+        <img class="wide" src="assets/EspressoBar.jpg" alt="Espresso bar" loading="lazy">
+      </div>
+    </div>
+
+    <div class="grid cards-3">
+      <article class="card"><h3 class="card-title">SCA Brewing Workshops</h3><p class="muted">Monthly small‑group sessions. Learn, brew, pour.</p></article>
+      <article class="card"><h3 class="card-title">Latte Art Labs</h3><p class="muted">Microfoam, flow control, patterns.</p></article>
+      <article class="card"><h3 class="card-title">Tea Ceremony</h3><p class="muted">Rituals, tools, mindfulness.</p></article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div><a class="brand" href="index.html"><span class="logo">🍃</span><span class="brand-text">Leaf & Beans</span></a></div>
+      <p class="muted tiny center">© <span id="year3"></span> Leaf & Beans.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
+

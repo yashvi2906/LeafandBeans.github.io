@@ -1,0 +1,120 @@
+<!-- =========================
+File: index.html
+========================= -->
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leaf & Beans — Matcha • Coffee • Pastries</title>
+  <meta name="description" content="Leaf & Beans is a modern cafe serving ceremonial matcha, specialty coffee, and artisan pastries." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="logo">🍃</span>
+      <span class="brand-text">Leaf & Beans</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">☰</button>
+      <ul id="navMenu">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">☕</button>
+  </header>
+
+  <main>
+    <!-- 3D-ish animated hero (pure CSS) -->
+    <section class="hero">
+      <div class="hero-3d">
+        <!-- Coffee bean -->
+        <div class="bean" aria-hidden="true">
+          <div class="bean-core"></div>
+          <div class="bean-seam"></div>
+        </div>
+        <!-- Matcha leaf -->
+        <div class="leaf" aria-hidden="true"></div>
+      </div>
+      <div class="hero-copy container">
+        <h1>More <span class="acc-emerald">matcha</span>, more <span class="acc-amber">coffee</span>.</h1>
+        <p>Modern sanctuary for matcha devotees and coffee nerds — paired with flaky viennoiserie and minimalist vibes.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="menu.html">Explore Menu</a>
+          <a class="btn btn-ghost" href="about.html">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2 class="section-title">Signatures</h2>
+      <div class="grid cards-3">
+        <article class="card">
+          <div class="card-media"><img src="assets/macha1.jpg" alt="Iced ceremonial matcha" loading="lazy"></div>
+          <h3 class="card-title">Iced Ceremonial Matcha</h3>
+          <p class="muted">Stone‑ground, almond milk</p>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="assets/macha2.jpg" alt="Single-origin flat white" loading="lazy"></div>
+          <h3 class="card-title">Single‑Origin Flat White</h3>
+          <p class="muted">Ethiopia Yirgacheffe</p>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="assets/buttercroissant.jpg" alt="Butter croissant" loading="lazy"></div>
+          <h3 class="card-title">Croissant 100% Butter</h3>
+          <p class="muted">Laminated in‑house</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="split-hero">
+      <div class="container split">
+        <div class="split-media"><img src="assets/matchawhisked.jpg" alt="Matcha whisked to order" loading="lazy"></div>
+        <div class="split-copy">
+          <h3>Ceremonial grade, every day vibes</h3>
+          <p>Our matcha is sourced from small Japanese farms; whisked to order. Coffee program features rotating single‑origin roasters, pulled with exacting care.</p>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="contact.html">Visit us</a>
+            <a class="btn btn-ghost" href="menu.html#specials">View specials</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="logo">🍃</span><span class="brand-text">Leaf & Beans</span></a>
+        <p class="muted small">Matcha & specialty coffee with artisan pastries. Grown with care, brewed with love.</p>
+      </div>
+      <div>
+        <p class="foot-title">Visit</p>
+        <p class="small">22, Riverside Walk, Ahmedabad</p>
+      </div>
+      <div>
+        <p class="foot-title">Talk</p>
+        <p class="small">+91 98765 43210</p>
+        <p class="small">hello@leafandbeans.cafe</p>
+      </div>
+      <div>
+        <p class="foot-title">Social</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Messages">DM</a>
+        </div>
+      </div>
+    </div>
+    <p class="muted tiny center">© <span id="year"></span> Leaf & Beans. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

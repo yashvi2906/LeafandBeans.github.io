@@ -1,0 +1,76 @@
+
+
+<!-- =========================
+File: contact.html
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Leaf & Beans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="logo">🍃</span><span class="brand-text">Leaf & Beans</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+      <ul id="navMenu">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle theme">☕</button>
+  </header>
+
+  <main class="container section">
+    <header class="page-head">
+      <h1>Contact</h1>
+      <p class="muted">We’re open daily 8am–9pm. DM, email or call — we reply fast.</p>
+    </header>
+
+    <div class="grid contact-grid">
+      <form class="card form" onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you ☕');">
+        <label>
+          <span>Name</span>
+          <input type="text" required placeholder="Your name" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" required placeholder="you@example.com" />
+        </label>
+        <label>
+          <span>Subject</span>
+          <input type="text" placeholder="Quick question" />
+        </label>
+        <label class="full">
+          <span>Message</span>
+          <textarea rows="5" placeholder="Tell us more…"></textarea>
+        </label>
+        <button class="btn btn-solid" type="submit">Send</button>
+      </form>
+
+      <div class="card info">
+        <p class="muted">22, Riverside Walk, Ahmedabad</p>
+        <p class="muted">+91 98765 43210</p>
+        <p class="muted">hello@leafandbeans.cafe</p>
+        <div class="map">
+          <iframe title="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=72.50%2C22.90%2C72.60%2C23.05&layer=mapnik&marker=23.03%2C72.58"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div><a class="brand" href="index.html"><span class="logo">🍃</span><span class="brand-text">Leaf & Beans</span></a></div>
+      <p class="muted tiny center">© <span id="year5"></span> Leaf & Beans.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<!-- =========================
+File: gallery.html
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery — Leaf & Beans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="logo">🍃</span><span class="brand-text">Leaf & Beans</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+      <ul id="navMenu">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle theme">☕</button>
+  </header>
+
+  <main class="container section">
+    <header class="page-head">
+      <h1>Gallery</h1>
+      <!-- <p class="muted">Drop more photos into <code>assets/</code> and add them here.</p> -->
+    </header>
+
+    <div class="masonry">
+      <img src="assets/macha1.jpg" alt="Matcha drink" loading="lazy">
+      <img src="assets/FlatWhite.jpg" alt="Flat white" loading="lazy">
+      <img src="assets/cafe2.jpg" alt="Cafe interior" loading="lazy">
+      <img src="assets/macha2.jpg" alt="Matcha whisk" loading="lazy">
+      <img src="assets/CoffeePour.jpg" alt="Coffee pour" loading="lazy">
+      <img src="assets/Pastry.jpg" alt="Pastry" loading="lazy">
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div><a class="brand" href="index.html"><span class="logo">🍃</span><span class="brand-text">Leaf & Beans</span></a></div>
+      <p class="muted tiny center">© <span id="year4"></span> Leaf & Beans.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

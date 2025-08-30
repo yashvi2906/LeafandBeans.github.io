@@ -1,0 +1,84 @@
+
+<!-- =========================
+File: menu.html
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu — Leaf & Beans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="logo">🍃</span><span class="brand-text">Leaf & Beans</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+      <ul id="navMenu">
+        <li><a class="active" href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle theme">☕</button>
+  </header>
+
+  <main class="container section">
+    <header class="page-head">
+      <h1>Menu</h1>
+      <p class="muted">Sourced ethically. Brewed precisely. Baked daily.</p>
+    </header>
+
+    <div class="grid menu-grid">
+      <section class="menu-card">
+        <h2>Matcha</h2>
+        <ul>
+          <li><span>Ceremonial Matcha</span><strong>₹260</strong><small>Traditional whisk</small></li>
+          <li><span>Matcha Latte (Hot/Iced)</span><strong>₹280</strong><small>Choice of milk</small></li>
+          <li><span>Yuzu Matcha Fizz</span><strong>₹320</strong><small>Sparkling, bright</small></li>
+          <li><span>Pistachio Matcha</span><strong>₹320</strong><small>Rich & nutty</small></li>
+        </ul>
+      </section>
+
+      <section class="menu-card">
+        <h2>Coffee</h2>
+        <ul>
+          <li><span>Espresso</span><strong>₹180</strong><small>Double shot</small></li>
+          <li><span>Flat White</span><strong>₹260</strong><small>Velvety microfoam</small></li>
+          <li><span>Cappuccino</span><strong>₹240</strong><small>Classic</small></li>
+          <li><span>Filter / V60</span><strong>₹240</strong><small>Single origin</small></li>
+          <li><span>Cold Brew</span><strong>₹260</strong><small>12hr steep</small></li>
+        </ul>
+      </section>
+
+      <section class="menu-card">
+        <h2>Bakery</h2>
+        <ul>
+          <li><span>Butter Croissant</span><strong>₹180</strong><small>Laminated in-house</small></li>
+          <li><span>Pain au Chocolat</span><strong>₹220</strong><small>55% dark</small></li>
+          <li><span>Almond Croissant</span><strong>₹240</strong><small>Frangipane</small></li>
+          <li><span>Basque Cheesecake</span><strong>₹260</strong><small>Slice</small></li>
+        </ul>
+      </section>
+    </div>
+
+    <h2 id="specials" class="section-title">This Week’s Picks</h2>
+    <div class="grid cards-3">
+      <article class="card"><div class="card-media"><img src="assets/VanillaBeanColdBrew.jpg" alt="Vanilla Bean Cold Brew"></div><h3 class="card-title">Vanilla Bean Cold Brew</h3><p class="muted">Slow steeped, vanilla bean syrup — <strong>₹280</strong></p></article>
+      <article class="card"><div class="card-media"><img src="assets/cheesecake.jpg" alt="Basque Cheesecake"></div><h3 class="card-title">Basque Cheesecake</h3><p class="muted">Burnt top, ultra creamy — <strong>₹260</strong></p></article>
+      <article class="card"><div class="card-media"><img src="assets/macha1.jpg" alt="Pistachio Matcha Latte"></div><h3 class="card-title">Pistachio Matcha Latte</h3><p class="muted">House pistachio paste — <strong>₹320</strong></p></article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div><a class="brand" href="index.html"><span class="logo">🍃</span><span class="brand-text">Leaf & Beans</span></a></div>
+      <p class="muted tiny center">© <span id="year2"></span> Leaf & Beans.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
